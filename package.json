@@ -1,0 +1,19 @@
+{
+  "name": "ts-transformer-portalscript",
+  "version": "1.2.1",
+  "description": "Typescript Tranformer for portal scripts",
+  "main": "lib/transformer.js",
+  "license": "MIT",
+  "scripts": {
+    "compile": "tsc -p ./",
+    "prepublishOnly": "rimraf lib && npm run compile",
+    "test": "cd test && ttsc"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "ts-node": "^9.0.0",
+    "ttypescript": "^1.5.11",
+    "typescript": "^4.0.2"
+  }
+}

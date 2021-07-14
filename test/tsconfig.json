@@ -1,0 +1,21 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "transformed",
+    "target": "ES5",
+    "downlevelIteration": true,
+    "plugins": [
+      {
+        "transform": "../src/transformer.ts",
+        "type": "raw",
+        "after": true
+      }
+    ]
+  },
+  "files": [
+    "this-helper-expressions.ts"
+  ],
+  "exclude": [
+    "../*"
+  ]
+}
